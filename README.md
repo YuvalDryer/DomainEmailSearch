@@ -16,7 +16,11 @@ jsoup-1.10.1.jar
 javac -classpath .;jsoup-1.10.1.jar *.java
 
 #### 4. Run command
-java -classpath .;jsoup-1.10.1.jar DMS_Main \<domain name>
+java -classpath .;jsoup-1.10.1.jar DMS_Main \<domain name> \<optional> </br>
+
+##### optional: (Space separated)
+-cont use this to print the email addresses as they are discovered instead of at the end. </br>
+-all  use this to option to view a list of all successful and failed url read attempts </br>
 
 ## Output:
 \<Result Header> </br>
@@ -27,5 +31,5 @@ e.g:
 Found these email addresses: </br>
 press@domain.com </br>
 sales@domain.com </br>
-info@domain.com </br>
+
 
