@@ -13,10 +13,18 @@ jsoup-1.10.1.jar
 
 #### 2. Make sure the Path Environment System Variables points to the bin folder of the installed JDK.
 #### 3. Compile command
-javac -classpath .;jsoup-1.10.1.jar *.java
+For Windows: </br>
+javac -classpath .;jsoup-1.10.1.jar *.java </br>
 
-#### 4. Run command
+For Linux/Mac: </br>
+javac -classpath .:./jsoup-1.10.1.jar *.java
+
+#### 4. Execution command
+For Windows: </br>
 java -classpath .;jsoup-1.10.1.jar DMS_Main \<domain name> \<optional> </br>
+
+For Linux/Mac: </br>
+java -classpath .:./jsoup-1.10.1.jar DMS_Main \<domain name> \<optional> </br>
 
 ##### optional: (Space separated)
 -cont use this to print the email addresses as they are discovered instead of at the end. </br>
